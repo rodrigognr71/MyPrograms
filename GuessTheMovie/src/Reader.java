@@ -3,15 +3,12 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Scanner;
 
 public class Reader {
 
     public static ArrayList<String> readerMovies() {
-        Scanner scanner = new Scanner(System.in);
         File file = new File("Movies.txt");
         ArrayList<String> list = new ArrayList<>();
-        boolean hasWon = false;
         BufferedReader file2 = null;
         String lines;
         try {
@@ -30,5 +27,9 @@ public class Reader {
             e.printStackTrace();
         }
         return list;
+    }
+
+    public static ArrayList<String> getList() {
+        return readerMovies();
     }
 }

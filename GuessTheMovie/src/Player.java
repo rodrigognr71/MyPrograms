@@ -1,41 +1,66 @@
+import java.util.Scanner;
+
 public class Player {
+
     private GuessTheMovie guessTheMovie;//
+    private GuessTheMovie randomMovie;
+    private GuessTheMovie charMovie;
+
+    private boolean hasWon = false;
+    private GuessTheMovie charGuessMovie;
+
+
+    private int wrongL = 0;
+    private int points = 10;
+
 
     public Player(GuessTheMovie guessTheMovie) {
         this.guessTheMovie = guessTheMovie;
+        this.randomMovie = charMovie;
+        this.points = points;
+
     }
 
+
     public void start() {
+        Scanner scanner = new Scanner(System.in);
+
+        String wrongLetters = "";
         System.out.println("Welcome to the game!");
         System.out.println("Guess the movie");
 
-        while(guessTheMovie.getPoints() > 0) {
-            if (String.valueOf(guessTheMovie.getGuessMovie()).equals(get.randomMovie)){
+        while (guessTheMovie.getPoints() > 0) {
+            //d ela funcion charMovie, conseguimos la pelicula en formato _ y verificamos si es igual a randomMovie(String)
+            if (String.valueOf(charMovie).equals(randomMovie)) {
                 hasWon = true;
                 break;
             } else {
                 System.out.println("Guess a letter:");
                 String letter = scanner.nextLine();
                 // System.out.println(letter);
-                for (int i = 0; i < charMovie.length; i++) {
-                    if (charMovie[i] == letter.charAt(0)) {
-                        String a = Character.toString(charGuessMovie[i]);
-                        charGuessMovie[i] = a.replaceAll("_", letter).charAt(0);
+                for (int i = 0; i < guessTheMovie.getCharMovie().length; i++) {
+                    if (guessTheMovie.getCharMovie()[i] == letter.charAt(0)) {
+                        //de la funcion guessTheMovie, conseguimos la posicion i de
+                        //del metodo getCharMovie.
+                        String a = Character.toString(guessTheMovie.charMovie()[i]);
+                       guessTheMovie.charMovie()[i] = a.replaceAll("_", letter).charAt(0);
                     }
                 }
-                if (!(randomMovie.contains(letter))){
-                    points--;
+                if (!(guessTheMovie.getRandomMovie().contains(letter))) {
+                    points -= 1;
                     wrongLetters += letter + " ";
-                    wrongL ++;
-                    System.out.println("You have guessed " + wrongL +" wrong letters: " + wrongLetters);
+                    wrongL++;
+                    System.out.println("You have guessed " + wrongL + " wrong letters: " + wrongLetters);
                 }
-                System.out.println("You are guessing: " + String.valueOf(charGuessMovie));
+                System.out.println("You are guessing: " + String.valueOf(guessTheMovie.getGuessMovie()));
             }
         }
-        if(hasWon){
+        if (hasWon) {
             System.out.println("you won.");
         } else {
             System.out.println("You loose.");
         }
     }
+
+
 }
