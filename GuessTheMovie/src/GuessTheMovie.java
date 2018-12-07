@@ -29,7 +29,7 @@ public class GuessTheMovie {
     }
 
     public String randomMovie() {
-        randomMovie = charMovie.toString();
+        randomMovie = String.valueOf(charMovie);
         return randomMovie;
     }
 

@@ -42,8 +42,8 @@ public class Player {
                     if (guessTheMovie.getCharMovie()[i] == letter.charAt(0)) {
                         //de la funcion guessTheMovie, conseguimos la posicion i de
                         //del metodo getCharMovie.
-                        String a = Character.toString(guessTheMovie.charMovie()[i]);
-                       guessTheMovie.charMovie()[i] = a.replaceAll("_", letter).charAt(0);
+                        String a = Character.toString(guessTheMovie.getGuessMovie()[i]);
+                       guessTheMovie.getGuessMovie()[i] = a.replaceAll("_", letter).charAt(0);
                     }
                 }
                 if (!(guessTheMovie.getRandomMovie().contains(letter))) {
