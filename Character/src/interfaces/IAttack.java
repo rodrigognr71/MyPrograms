@@ -2,7 +2,7 @@ package interfaces;
 
 import characters.Character;
 
-public interface Attack {
+public interface IAttack {
     void attack(Character character);
 }
 

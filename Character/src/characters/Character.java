@@ -1,7 +1,7 @@
 package characters;
-import interfaces.Attack;
+import interfaces.IAttack;
 
-public abstract class Character implements Attack {
+public abstract class Character implements IAttack {
     private int health;
     private int mana;
     private int damage;
@@ -13,37 +13,23 @@ public abstract class Character implements Attack {
         this.damage = damage;
     }
 
-    protected Character() {
-    }
-
     public int getHealth() {
         return health;
     }
-
     public void setHealth(int health) {
-        int min = 0;
-        int max = 200;
-        this.health = (int) (Math.random() * ((max - min) + 1));
+        this.health = health;
     }
-
     public int getMana() {
         return mana;
     }
-
     public void setMana(int mana) {
-        int min = 0;
-        int max = 100;
-        this.mana = (int) (Math.random() * ((max - min) + 1));
+        this.mana = mana;
     }
-
     public int getDamage() {
         return damage;
     }
-
     public void setDamage(int damage) {
-        int min = 0;
-        int max = 20;
-        this.damage = (int) (Math.random() * ((max - min) + 1));
+        this.damage = damage;
     }
 }
 

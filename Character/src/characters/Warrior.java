@@ -2,8 +2,8 @@ package characters;
 
 public class Warrior extends Character {
 
-    public Warrior(int health, int mana, int damage) {
-        super(health, mana, damage);
+    public Warrior() {
+        super(300, 0, 120);
     }
 
     @Override
