@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="view.View">
+  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="c346" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+        <constraints/>
+        <properties>
+          <autoscrolls value="true"/>
+          <columns value="5"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <hspacer id="52722">
+        <constraints/>
+      </hspacer>
+      <component id="73812" class="javax.swing.JLabel">
+        <constraints/>
+        <properties>
+          <labelFor value="75d1c"/>
+          <text value="x"/>
+        </properties>
+      </component>
+      <hspacer id="882e8">
+        <constraints/>
+      </hspacer>
+      <component id="40d92" class="javax.swing.JTextField" binding="textField2" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="5"/>
+        </properties>
+      </component>
+      <component id="3ec78" class="javax.swing.JButton" binding="multiplicarButton" default-binding="true">
+        <constraints/>
+        <properties>
+          <text value="Multiplicar"/>
+        </properties>
+      </component>
+      <component id="75d1c" class="javax.swing.JTextField" binding="xTextField" default-binding="true">
+        <constraints/>
+        <properties>
+          <columns value="5"/>
+          <text value=""/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
