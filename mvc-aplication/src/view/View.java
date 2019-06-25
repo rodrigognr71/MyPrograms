@@ -20,25 +20,25 @@ public class View {
         frame = new JFrame(title);
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(500, 300);
+        frame.setSize(500, 320);
         frame.setLocationRelativeTo(null);
 
         JPanel panel = new JPanel();
         getFrame().add(panel);
-        placeComponentes(panel);
+        placeComponents(panel);
         frame.setVisible(true);
     }
         // Create UI elements
-        private void placeComponentes (JPanel panel){
+        private void placeComponents (JPanel panel){
 
             panel.setLayout(null);
 
-            setFirstnameLabel(new JLabel("Firstname"));
+            setFirstnameLabel(new JLabel("First Name"));
             getFirstnameLabel().setBounds(10, 10, 80, 25);
             panel.add(getFirstnameLabel());
 
-            setLastnameLabel(new JLabel("Lastname"));
-            getLastnameLabel().setBounds(10, 40, 80, 25);
+            setLastnameLabel(new JLabel("Last Name"));
+            getLastnameLabel().setBounds(10, 50, 80, 25);
             panel.add(getLastnameLabel());
 
             setFirstnameTextField(new JTextField());
@@ -46,11 +46,11 @@ public class View {
             panel.add(getFirstnameTextField());
 
             setLastnameTextField(new JTextField());
-            getLastnameTextField().setBounds(100, 40, 160, 25);
+            getLastnameTextField().setBounds(100, 50, 160, 25);
             panel.add(getLastnameTextField());
 
             setNameSaveTextArea(new JTextArea());
-            getNameSaveTextArea().setBounds(100, 100, 160, 100);
+            getNameSaveTextArea().setBounds(100, 140, 160, 100);
             getNameSaveTextArea().setEditable(false);
             panel.add(getNameSaveTextArea());
 
