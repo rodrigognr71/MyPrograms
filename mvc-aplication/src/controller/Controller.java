@@ -1,28 +1,24 @@
 package controller;
 
 import model.PersonModel;
-import model.Contacts;
+import model.ContactsModel;
 import view.View;
 
 import javax.swing.*;
 
 public class Controller {
-    private PersonModel personModel;
     private View view;
-    private Contacts contacts;
-    private JTextArea textArea;
+    private ContactsModel contacts;
 
-
-    public Controller(PersonModel personModel, View view) {
-        this.personModel = personModel;
+    public Controller(ContactsModel contacts, View view) {
         this.view = view;
-        this.contacts = new Contacts();
+        this.contacts = contacts;
         initView();
     }
 
     public void initView() {
-        view.getFirstnameTextField().setText(personModel.getFirstname());
-        view.getLastnameTextField().setText(personModel.getLastname());
+        view.getFirstnameTextField().setText("");
+        view.getLastnameTextField().setText("");
     }
 
     public void initController() {
@@ -33,15 +29,16 @@ public class Controller {
     }
 
     private void saveUser() {
-        personModel = new PersonModel(view.getFirstnameTextField().getText(), view.getLastnameTextField().getText());
-        showUser();
+        PersonModel personModel = new PersonModel(view.getFirstnameTextField().getText(), view.getLastnameTextField().getText());
+        showUser(personModel);
 
         contacts.addContact(personModel);
         JOptionPane.showMessageDialog(null, "User saved : " + personModel.getFirstname()
                 + " " + personModel.getLastname(), "Info", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    private void showUser() {
+    private void showUser(PersonModel personModel) {
+
         view.getNameSaveTextArea().setText(personModel.getFirstname() + " " + personModel.getLastname());
     }
 

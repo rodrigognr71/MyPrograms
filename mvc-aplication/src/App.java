@@ -1,13 +1,13 @@
 import controller.Controller;
-import model.PersonModel;
+import model.ContactsModel;
 import view.View;
 
 public class App {
     public static void main(String[] args) {
         // Assemble all the pieces of the MVC
-        PersonModel m = new PersonModel("","");
-        View v = new View("MVC aplication");
-        Controller c = new Controller(m, v);
-        c.initController();
+        ContactsModel contactsModel = new ContactsModel();
+        View view = new View("MVC aplication");
+        Controller controller = new Controller(contactsModel, view);
+        controller.initController();
     }
 }
