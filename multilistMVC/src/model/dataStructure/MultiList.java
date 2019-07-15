@@ -1,22 +1,44 @@
 package model.dataStructure;
 
 import model.Student;
+import model.Subject;
+
+import java.util.NoSuchElementException;
 
 public class MultiList {
-    private NodeStudent first;
-    private NodeStudent last;
+    private NodeStudent firstStudent;
+    private NodeStudent lastStudent;
+    private NodeSubject firstSubject;
+    private NodeSubject lastSubject;
 
     public void addStudent(Student student) {
-        final NodeStudent currentLast = last;
+        final NodeStudent currentLast = lastStudent;
         final NodeStudent newNode = new NodeStudent(currentLast, student, null);
-        last = newNode;
+        lastStudent = newNode;
         if (currentLast == null) {
-            first = newNode;
+            firstStudent = newNode;
         }
         else {
             currentLast.nextNodeStudent = newNode;
         }
     }
+
+    public void addSubject(Subject subject){
+        final NodeSubject currentSubjectLast = lastSubject;
+        final NodeSubject newNode = new NodeSubject(currentSubjectLast, subject, null);
+        lastSubject = newNode;
+        if (lastSubject == null) {
+            firstSubject = newNode;
+        }
+        else {
+            currentSubjectLast.nextNodeSubject = newNode;
+        }
+    }
+
+    public void nextStudent(Student student){
+       
+    }
+
 
 
 }

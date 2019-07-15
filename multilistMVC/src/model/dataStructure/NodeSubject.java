@@ -7,7 +7,9 @@ public class NodeSubject {
     protected NodeSubject previousNodeSubject;
     protected NodeSubject nextNodeSubject;
 
-    public NodeSubject(Subject subject) {
+    public NodeSubject(NodeSubject previousNodeSubject, Subject subject, NodeSubject nextNodeSubject) {
         this.subject = subject;
+        this.previousNodeSubject = previousNodeSubject;
+        this.nextNodeSubject = nextNodeSubject;
     }
 }
