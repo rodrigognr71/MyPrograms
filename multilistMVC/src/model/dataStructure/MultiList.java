@@ -36,6 +36,13 @@ public class MultiList {
         }
     }
 
+    public Student previousStudent(){
+        if(current != null && current.prevNodeStudent != null){
+            current = current.prevNodeStudent;
+        }
+        return current.student;
+    }
+
     public Student nextStudent(){
         if (current != null && current.nextNodeStudent != null){
             current = current.nextNodeStudent;
