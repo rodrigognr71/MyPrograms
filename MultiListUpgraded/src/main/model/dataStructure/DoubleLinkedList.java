@@ -47,7 +47,7 @@ public class DoubleLinkedList<T> {
     public T search(T value) {
         Node<T> current = firstNode;
         while (current != null) {
-            if (current.data.equals(value)) {
+            if (value.equals(current.data)) {
                 currentNode = current;
                 return currentNode.data;
             } else {

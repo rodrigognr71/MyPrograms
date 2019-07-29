@@ -60,4 +60,9 @@ public class DoubleLinkedListTest {
         assertEquals("v3", doubleLinkedList.getCurrentNode().data);
 
     }
+
+
+
+
+
 }

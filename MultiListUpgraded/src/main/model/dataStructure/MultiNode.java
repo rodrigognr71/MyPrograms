@@ -34,7 +34,9 @@ public class MultiNode<E,T>  {
         this.children = children;
     }
 
-    public boolean equals(MultiNode<E,T> multiNode){
-        return multiNode.value.equals(value);
+    public boolean equalss(MultiNode<E,T> multiNode){
+        //return value.equals(multiNode.value);
+        return true;
+
     }
 }

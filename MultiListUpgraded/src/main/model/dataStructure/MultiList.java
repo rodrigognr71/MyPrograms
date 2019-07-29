@@ -6,9 +6,14 @@ public class MultiList<E,T> {
     protected MultiNode<E,T> currentMultiNode;
 
 
+    public MultiList() {
+        doubleLinkedList = new DoubleLinkedList<>();
+    }
+
     public void addBack(E value) {
         MultiNode<E,T> multiNode = new MultiNode<>(value);
         doubleLinkedList.addLast(multiNode);
+        currentMultiNode = multiNode;
     }
 
 /*    public void addSubject(Subject subject){
@@ -23,10 +28,13 @@ public class MultiList<E,T> {
         }
     }*/
 
+    public  void addChildToFirst(T data){
+        currentMultiNode.getChildren().addFirst(data);
+    }
+
     public void addChildToCurrent(T data){
         currentMultiNode.getChildren().addLast(data);
     }
-
 
     public E previous(){
         currentMultiNode = doubleLinkedList.previous();
@@ -46,7 +54,20 @@ public class MultiList<E,T> {
         return currentMultiNode.value;
     }
 
-   /* public E nextE(){
+    public E removeCurrent(){
+        currentMultiNode = doubleLinkedList.removeCurrent();
+        return currentMultiNode.value;
+    }
+
+    public MultiNode<E, T> getCurrentMultiNode() {
+        return currentMultiNode;
+    }
+
+    public void setCurrentMultiNode(MultiNode<E, T> currentMultiNode) {
+        this.currentMultiNode = currentMultiNode;
+    }
+
+    /* public E nextE(){
         if (currentMultiNode != null && currentMultiNode.nextMultiNode != null){
             currentMultiNode = currentMultiNode.nextMultiNode;
         }

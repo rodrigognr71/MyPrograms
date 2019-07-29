@@ -22,23 +22,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="java" value="11" />
+          <entry key="class" value="3" />
+          <entry key="java" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="JAVA" value="11" />
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="9" />
-          <entry key="java" value="2522" />
+          <entry key="java" value="3000" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="2522" />
+          <entry key="JAVA" value="3000" />
           <entry key="PLAIN_TEXT" value="9" />
         </counts>
       </usages-collector>
@@ -51,8 +53,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/DoubleLinkedList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="918">
-                  <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+                <state relative-caret-position="323">
+                  <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
                   <folding>
                     <element signature="e#1781#1782#0" expanded="true" />
                     <element signature="e#1812#1813#0" expanded="true" />
@@ -76,23 +78,38 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/model/Subject.java">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/MultiNode.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+                <state relative-caret-position="357">
+                  <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
                   <folding>
                     <element signature="e#730#731#0" expanded="true" />
                     <element signature="e#761#762#0" expanded="true" />
                     <element signature="e#822#823#0" expanded="true" />
                     <element signature="e#862#863#0" expanded="true" />
-                    <element signature="e#904#905#0" expanded="true" />
-                    <element signature="e#957#958#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/model/Subject.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="442">
+                  <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#721#722#0" expanded="true" />
+                    <element signature="e#765#766#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/test/model/dataStructure/MultiListTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="312">
+                  <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
                 </state>
               </provider>
             </entry>
@@ -101,7 +118,7 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/Node.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="221">
@@ -110,15 +127,32 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/MultiList.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="782">
-                  <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
+                <state relative-caret-position="289">
+                  <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
                   <folding>
+                    <element signature="e#198#199#0" expanded="true" />
+                    <element signature="e#257#258#0" expanded="true" />
+                    <element signature="e#724#725#0" expanded="true" />
+                    <element signature="e#763#764#0" expanded="true" />
                     <element signature="e#802#803#0" expanded="true" />
                     <element signature="e#848#849#0" expanded="true" />
+                    <element signature="e#1586#1587#0" expanded="true" />
+                    <element signature="e#1625#1626#0" expanded="true" />
+                    <element signature="e#1698#1699#0" expanded="true" />
+                    <element signature="e#1754#1755#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/model/Student.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="40" selection-end-column="5" />
                 </state>
               </provider>
             </entry>
@@ -142,19 +176,21 @@
         <option value="$PROJECT_DIR$/src/model/dataStructure/Node.java" />
         <option value="$PROJECT_DIR$/src/model/dataStructure/MultiNode.java" />
         <option value="$PROJECT_DIR$/src/model/dataStructure/DoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/test/model/dataStructure/DoubleLinkedListTest.java" />
         <option value="$PROJECT_DIR$/src/main/model/dataStructure/Node.java" />
-        <option value="$PROJECT_DIR$/src/main/model/dataStructure/DoubleLinkedList.java" />
-        <option value="$PROJECT_DIR$/src/main/model/dataStructure/MultiNode.java" />
+        <option value="$PROJECT_DIR$/src/main/model/Subject.java" />
+        <option value="$PROJECT_DIR$/src/test/model/dataStructure/DoubleLinkedListTest.java" />
+        <option value="$PROJECT_DIR$/src/test/model/dataStructure/MultiListTest.java" />
         <option value="$PROJECT_DIR$/src/main/model/dataStructure/MultiList.java" />
+        <option value="$PROJECT_DIR$/src/main/model/dataStructure/MultiNode.java" />
+        <option value="$PROJECT_DIR$/src/main/model/dataStructure/DoubleLinkedList.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="47" />
-    <option name="y" value="-13" />
-    <option name="width" value="1612" />
-    <option name="height" value="912" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1672" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -220,7 +256,7 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564185599075" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564444164736" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
   </component>
@@ -228,14 +264,14 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="model.dataStructure" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Rodrigo Espinoza\IdeaProjects\MultiListUpgraded\src\main" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rodrigo Espinoza\IdeaProjects\MultiListUpgraded\src" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Rodrigo Espinoza\IdeaProjects\MultiListUpgraded\src" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rodrigo Espinoza\IdeaProjects\MultiListUpgraded\src\main" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -250,23 +286,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.DoubleLinkedListTest.removeCurrent">
-    <configuration name="DoubleLinkedListTest.addLast" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MultiListUpgraded" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.dataStructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.dataStructure" />
-      <option name="MAIN_CLASS_NAME" value="model.dataStructure.DoubleLinkedListTest" />
-      <option name="METHOD_NAME" value="addLast" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MultiListTest.search">
     <configuration name="DoubleLinkedListTest.next" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="MultiListUpgraded" />
       <extension name="coverage">
@@ -278,22 +298,6 @@
       <option name="PACKAGE_NAME" value="model.dataStructure" />
       <option name="MAIN_CLASS_NAME" value="model.dataStructure.DoubleLinkedListTest" />
       <option name="METHOD_NAME" value="next" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="DoubleLinkedListTest.previous" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="MultiListUpgraded" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="model.dataStructure.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="model.dataStructure" />
-      <option name="MAIN_CLASS_NAME" value="model.dataStructure.DoubleLinkedListTest" />
-      <option name="METHOD_NAME" value="previous" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -331,20 +335,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MultiListTest.addBack" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MultiListUpgraded" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.dataStructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.dataStructure" />
+      <option name="MAIN_CLASS_NAME" value="model.dataStructure.MultiListTest" />
+      <option name="METHOD_NAME" value="addBack" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MultiListTest.search" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="MultiListUpgraded" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="model.dataStructure.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="model.dataStructure" />
+      <option name="MAIN_CLASS_NAME" value="model.dataStructure.MultiListTest" />
+      <option name="METHOD_NAME" value="search" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
-      <item itemvalue="JUnit.DoubleLinkedListTest.addLast" />
-      <item itemvalue="JUnit.DoubleLinkedListTest.previous" />
       <item itemvalue="JUnit.DoubleLinkedListTest.next" />
       <item itemvalue="JUnit.DoubleLinkedListTest.search" />
       <item itemvalue="JUnit.DoubleLinkedListTest.removeCurrent" />
+      <item itemvalue="JUnit.MultiListTest.search" />
+      <item itemvalue="JUnit.MultiListTest.addBack" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.DoubleLinkedListTest.removeCurrent" />
+        <item itemvalue="JUnit.MultiListTest.search" />
         <item itemvalue="JUnit.DoubleLinkedListTest.search" />
+        <item itemvalue="JUnit.MultiListTest.addBack" />
+        <item itemvalue="JUnit.DoubleLinkedListTest.removeCurrent" />
         <item itemvalue="JUnit.DoubleLinkedListTest.next" />
-        <item itemvalue="JUnit.DoubleLinkedListTest.previous" />
-        <item itemvalue="JUnit.DoubleLinkedListTest.addLast" />
       </list>
     </recent_temporary>
   </component>
@@ -362,36 +398,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DoubleLinkedListTest_addFirst - 2019.07.24 at 19h 06m 18s.xml">
-      <configuration name="DoubleLinkedListTest.addFirst" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTest_addFirst - 2019.07.24 at 19h 06m 45s.xml">
-      <configuration name="DoubleLinkedListTest.addFirst" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTest_addLast - 2019.07.24 at 19h 07m 58s.xml">
-      <configuration name="DoubleLinkedListTest.addLast" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTest_previous - 2019.07.24 at 19h 10m 16s.xml">
-      <configuration name="DoubleLinkedListTest.previous" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTest_next - 2019.07.24 at 19h 12m 03s.xml">
-      <configuration name="DoubleLinkedListTest.next" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="DoubleLinkedListTest_search - 2019.07.24 at 19h 13m 31s.xml">
+    <history-entry file="DoubleLinkedListTest_search - 2019.07.29 at 19h 02m 17s.xml">
       <configuration name="DoubleLinkedListTest.search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubleLinkedListTest_removeCurrent - 2019.07.24 at 19h 16m 32s.xml">
-      <configuration name="DoubleLinkedListTest.removeCurrent" configurationId="JUnit" />
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 03m 56s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="DoubleLinkedListTest_removeCurrent - 2019.07.24 at 19h 16m 57s.xml">
-      <configuration name="DoubleLinkedListTest.removeCurrent" configurationId="JUnit" />
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 04m 40s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 08m 32s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 08m 42s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 10m 07s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 39m 41s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 40m 06s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 40m 52s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MultiListTest_search - 2019.07.29 at 19h 40m 56s.xml">
+      <configuration name="MultiListTest.search" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12793177" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14669926" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -400,8 +442,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.329718" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3295964" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41255605" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -450,22 +492,71 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/model/dataStructure/MultiNode.java</url>
+          <line>37</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/model/dataStructure/DoubleLinkedList.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/model/Student.java">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/model/dataStructure/DoubleLinkedListTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="586">
-          <caret line="49" column="5" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="425">
+          <caret line="37" column="1" lean-forward="true" selection-start-line="37" selection-start-column="1" selection-end-line="40" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/Subject.java">
-      <provider selected="true" editor-type-id="text-editor" />
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/ParentRunner.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="203" selection-start-line="203" selection-end-line="203" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/internal/runners/model/ReflectiveCallable.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/org/junit/runners/model/FrameworkMethod.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/MultiList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="53" column="17" lean-forward="true" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+          <folding>
+            <element signature="e#198#199#0" expanded="true" />
+            <element signature="e#257#258#0" expanded="true" />
+            <element signature="e#724#725#0" expanded="true" />
+            <element signature="e#763#764#0" expanded="true" />
+            <element signature="e#802#803#0" expanded="true" />
+            <element signature="e#848#849#0" expanded="true" />
+            <element signature="e#1586#1587#0" expanded="true" />
+            <element signature="e#1625#1626#0" expanded="true" />
+            <element signature="e#1698#1699#0" expanded="true" />
+            <element signature="e#1754#1755#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/Node.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -487,23 +578,49 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/MultiNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="357">
+          <caret line="36" column="25" lean-forward="true" selection-start-line="36" selection-start-column="25" selection-end-line="36" selection-end-column="25" />
           <folding>
             <element signature="e#730#731#0" expanded="true" />
             <element signature="e#761#762#0" expanded="true" />
             <element signature="e#822#823#0" expanded="true" />
             <element signature="e#862#863#0" expanded="true" />
-            <element signature="e#904#905#0" expanded="true" />
-            <element signature="e#957#958#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/model/dataStructure/DoubleLinkedListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="49" selection-start-line="49" selection-end-line="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/model/Subject.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+          <folding>
+            <element signature="e#721#722#0" expanded="true" />
+            <element signature="e#765#766#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/model/dataStructure/MultiListTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/DoubleLinkedList.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="54" column="25" selection-start-line="54" selection-start-column="25" selection-end-line="54" selection-end-column="25" />
+        <state relative-caret-position="323">
+          <caret line="49" column="21" selection-start-line="49" selection-start-column="21" selection-end-line="49" selection-end-column="21" />
           <folding>
             <element signature="e#1781#1782#0" expanded="true" />
             <element signature="e#1812#1813#0" expanded="true" />
@@ -521,17 +638,6 @@
             <element signature="e#2694#2695#0" expanded="true" />
             <element signature="e#2749#2750#0" expanded="true" />
             <element signature="e#2795#2796#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/model/dataStructure/MultiList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="46" column="5" lean-forward="true" selection-start-line="46" selection-start-column="5" selection-end-line="46" selection-end-column="5" />
-          <folding>
-            <element signature="e#802#803#0" expanded="true" />
-            <element signature="e#848#849#0" expanded="true" />
           </folding>
         </state>
       </provider>

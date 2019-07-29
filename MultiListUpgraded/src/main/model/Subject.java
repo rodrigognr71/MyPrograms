@@ -34,4 +34,8 @@ public class Subject {
     public void setID(String ID) {
         this.ID = ID;
     }
+
+    public boolean equals(Subject subject) {
+        return ID.equals(subject.ID);
+    }
 }
