@@ -1,6 +1,6 @@
 package model.dataStructure;
 
-public class DoubleLinkedList<T> {
+public class DoubleLinkedList<T extends Comparable> {
 
     private Node<T> firstNode;
     private Node<T> lastNode;
@@ -44,22 +44,22 @@ public class DoubleLinkedList<T> {
         return currentNode.data;
     }
 
-    public T search(T value) {
-        Node<T> current = firstNode;
-        while (current != null) {
-            if (value.equals(current.data)) {
-                currentNode = current;
-                return currentNode.data;
-            } else {
-                if (current.nextNode != null) {
-                    current = current.nextNode;
-                } else {
-                    break;
-                }
-            }
-        }
-        return null;
-    }
+   public T search(T value) {
+       Node<T> current = firstNode;
+       while (current != null) {
+           if (current.data.compareTo(value) == 0) {
+               currentNode = current;
+               return currentNode.data;
+           } else {
+               if (current.nextNode != null) {
+                   current = current.nextNode;
+               } else {
+                   break;
+               }
+           }
+       }
+       return null;
+   }
 
     public  T getFirst(){
         return firstNode.data;
@@ -98,6 +98,11 @@ public class DoubleLinkedList<T> {
         return element;
     }
 
+    public T updateCurrent(T data){
+        currentNode.data = data;
+        return currentNode.data;
+    }
+
     public Node<T> getFirstNode() {
         return firstNode;
     }
@@ -114,11 +119,15 @@ public class DoubleLinkedList<T> {
         this.lastNode = lastNode;
     }
 
-    public Node<T> getCurrentNode() {
+    private Node<T> getCurrentNode() {
         return currentNode;
     }
 
     public void setCurrentNode(Node<T> currentNode) {
         this.currentNode = currentNode;
+    }
+
+    public  T getCurrentData(){
+        return currentNode.data;
     }
 }
