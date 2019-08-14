@@ -57,7 +57,7 @@ public class DoubleLinkedListTest {
         doubleLinkedList.addLast("v3");
         doubleLinkedList.previous();
         assertEquals("v2", doubleLinkedList.removeCurrent());
-        assertEquals("v3", doubleLinkedList.getCurrentNode().data);
+        assertEquals("v3", doubleLinkedList.getCurrentData());
 
     }
 
