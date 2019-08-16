@@ -8,22 +8,30 @@ public class MainWindows {
     private StudentPanel studentPanel;
     private SubjectPanel subjectPanel;
 
+
     public MainWindows(String title) {
         this.frame = new JFrame(title);
-
+        this.studentPanel = new StudentPanel();
+        studentPanel.initPanel();
+        frame.setLayout(new BorderLayout());
+        init();
     }
 
     public void init(){
-        StudentPanel studentPanel = new StudentPanel();
-        studentPanel.initPanel();
-        SubjectPanel subjectPanel = new SubjectPanel();
         frame.getContentPane().setLayout(new BorderLayout());
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(720, 480);
         frame.setLocationRelativeTo(null);
         frame.add(studentPanel.getStudentPanel());
-        frame.add(subjectPanel.getSubjectPanel());
         frame.setVisible(true);
+    }
+
+    public StudentPanel getStudentPanel() {
+        return studentPanel;
+    }
+
+    public SubjectPanel getSubjectPanel() {
+        return subjectPanel;
     }
 
     /* private JFrame frame;
