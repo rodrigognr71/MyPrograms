@@ -1,14 +1,14 @@
 package model;
 
-public class Subject implements Comparable<Subject> {
+public class Subject {
     private String name;
     private int finalScore;
-    private String id;
+    private String ID;
 
-    public Subject(String name, String id, int finalScore) {
+    public Subject(String name, int finalScore, String ID) {
         this.name = name;
         this.finalScore = finalScore;
-        this.id = id;
+        this.ID = ID;
     }
 
     public String getName() {
@@ -27,20 +27,15 @@ public class Subject implements Comparable<Subject> {
         this.finalScore = finalScore;
     }
 
-    public String getId() {
-        return id;
+    public String getID() {
+        return ID;
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public void setID(String ID) {
+        this.ID = ID;
     }
 
     public boolean equals(Subject subject) {
-        return id.equals(subject.id);
-    }
-
-    @Override
-    public int compareTo(Subject subject) {
-        return id.compareTo(subject.id);
+        return ID.equals(subject.ID);
     }
 }

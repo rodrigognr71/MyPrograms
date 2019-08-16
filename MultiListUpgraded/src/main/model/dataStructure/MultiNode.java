@@ -1,6 +1,23 @@
 package model.dataStructure;
 
-public class MultiNode<E extends Comparable,T extends Comparable> implements Comparable<MultiNode<E,T>>  {
+//public class MultiNode<E,T> extends Node {
+//      protected DoubleLinkedList<T> children;
+//
+//
+//    public MultiNode(Node<E> previousNode, E data, Node<E> nextNode) {
+//        super(previousNode, data, nextNode);
+//    }
+//
+//    public DoubleLinkedList<T> getChildren() {
+//        return children;
+//    }
+//
+//    public void setChildren(DoubleLinkedList<T> children) {
+//        this.children = children;
+//    }
+//}
+
+public class MultiNode<E,T> implements Comparable  {
     protected E value;
     protected DoubleLinkedList<T> children;
 
@@ -18,13 +35,8 @@ public class MultiNode<E extends Comparable,T extends Comparable> implements Com
     }
 
     public boolean equals(MultiNode<E,T> multiNode){
-        //return value.equals(multiNode.value);
-        return true;
-    }
-
-    @Override
-    public int compareTo(MultiNode<E, T> multiNode) {
-        return value.compareTo(multiNode.value);
+        return value.equals(multiNode.value);
+        //return true;
     }
 
 }

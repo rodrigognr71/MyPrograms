@@ -1,6 +1,6 @@
 package model.dataStructure;
 
-public class Node<T extends Comparable> implements Comparable<Node<T>> {
+public class Node<T> {
     protected T data;
     protected Node<T> previousNode;
     protected Node<T> nextNode;
@@ -9,10 +9,5 @@ public class Node<T extends Comparable> implements Comparable<Node<T>> {
         this.data = data;
         this.previousNode = previousNode;
         this.nextNode = nextNode;
-    }
-
-    @Override
-    public int compareTo(Node<T> node) {
-        return data.compareTo(node.data);
     }
 }

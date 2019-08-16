@@ -1,6 +1,6 @@
 package model;
 
-public class Student implements Comparable<Student> {
+public class Student {
     private String name;
     private String lastName;
     private long RFID;
@@ -39,13 +39,4 @@ public class Student implements Comparable<Student> {
         return name.equals(student.name)
                 && lastName.equals(student.lastName);
     }
-    public String getFullName(){
-        return name + " " + lastName;
-    }
-
-    @Override
-    public int compareTo(Student student) {
-        return getFullName().compareTo(student.getFullName());
-    }
-
 }

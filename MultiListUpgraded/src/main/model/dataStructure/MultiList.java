@@ -1,7 +1,7 @@
 package model.dataStructure;
 
 
-public class MultiList<E extends Comparable,T extends Comparable> {
+public class MultiList<E,T> {
     protected DoubleLinkedList<MultiNode<E,T>> doubleLinkedList;
     protected MultiNode<E,T> currentMultiNode;
 
@@ -15,6 +15,18 @@ public class MultiList<E extends Comparable,T extends Comparable> {
         doubleLinkedList.addLast(multiNode);
         currentMultiNode = multiNode;
     }
+
+/*    public void addSubject(Subject subject){
+        final Node currentSubjectLast = lastNode;
+        final Node newNode = new Node(currentSubjectLast, subject, null);
+        lastNode = newNode;
+        if (lastNode == null) {
+            firstNode = newNode;
+        }
+        else {
+            currentSubjectLast.nextNode = newNode;
+        }
+    }*/
 
     public  void addChildToFirst(T data){
         currentMultiNode.getChildren().addFirst(data);
@@ -42,20 +54,9 @@ public class MultiList<E extends Comparable,T extends Comparable> {
         return currentMultiNode.value;
     }
 
-    public E updateCurrent(E data){
-        currentMultiNode.value = data;
-        return currentMultiNode.value;
-    }
-
     public E removeCurrent(){
-        MultiNode<E, T> multiNode = doubleLinkedList.removeCurrent();
-        currentMultiNode = doubleLinkedList.getCurrentData();
-        return multiNode.value;
-    }
-
-    public T updateCurrentChild(T value){
-        currentMultiNode.getChildren().updateCurrent(value);
-        return currentMultiNode.getChildren().getCurrentData();
+        currentMultiNode = doubleLinkedList.removeCurrent();
+        return currentMultiNode.value;
     }
 
     public MultiNode<E, T> getCurrentMultiNode() {
@@ -66,23 +67,29 @@ public class MultiList<E extends Comparable,T extends Comparable> {
         this.currentMultiNode = currentMultiNode;
     }
 
-    public T nextCurrentChild(){
-        return currentMultiNode.getChildren().next();
-    }
-
-    public T previousCurrentChild(){
-        return currentMultiNode.getChildren().previous();
-    }
-
-    public E getCurrentValue(){
+    /* public E nextE(){
+        if (currentMultiNode != null && currentMultiNode.nextMultiNode != null){
+            currentMultiNode = currentMultiNode.nextMultiNode;
+        }
         return currentMultiNode.value;
     }
 
-    public T getCurrentChild(){
-        return currentMultiNode.getChildren().getCurrentData();
+    public E searchStudent(E student){
+        MultiNode<E, T> current = first;
+        while (current != null) {
+            if (current.value.equals(student)) {
+                currentMultiNode = current;
+                return currentMultiNode.value;
+            } else {
+                if (current.nextNode != null) {
+                    current = current.nextMultiNode;
+                } else {
+                    break;
+                }
+            }
+        }
+        return null;
     }
 
-    public DoubleLinkedList<T> getCurrentChildrenList(){
-        return currentMultiNode.getChildren();
-    }
- }
+*/
+}
