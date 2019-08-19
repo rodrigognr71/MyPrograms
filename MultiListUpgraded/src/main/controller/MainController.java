@@ -19,19 +19,20 @@ public class MainController {
 
     public void initController() {
         this.mainWindows.init();
-        mainWindows.getStudentPanel().getSaveStudentButton().addActionListener(e -> saveStudent());
-        mainWindows.getStudentPanel().getSearchStudentButton().addActionListener(e -> searchByUser());
-        mainWindows.getStudentPanel().getPreviousStudentButton().addActionListener(e -> previous());
-        mainWindows.getStudentPanel().getNextStudentButton().addActionListener(e -> next());
+        //
+        // mainWindows.getStudentPanel().getSaveStudentButton().addActionListener(e -> saveStudent());
+       // mainWindows.getStudentPanel().getSearchStudentButton().addActionListener(e -> searchByUser());
+       // mainWindows.getStudentPanel().getPreviousStudentButton().addActionListener(e -> previous());
+       // mainWindows.getStudentPanel().getNextStudentButton().addActionListener(e -> next());
     }
 
-    private void saveStudent(){
+  /*  private void saveStudent(){
         Student student = new Student(mainWindows.getStudentPanel().getFirstnameTextField().getText(),
                 mainWindows.getStudentPanel().getLastnameTextField().getText(),
                 Integer.parseInt(mainWindows.getStudentPanel().getRFIDField().getText()));
         showStudent(student);
         managerStudent.addStudent(student);
-    }
+    }*/
 
     /*public void initView() {
         mainWindows.getFirstnameTextField().setText("");

@@ -12,7 +12,9 @@ public class MainWindows {
     public MainWindows(String title) {
         this.frame = new JFrame(title);
         this.studentPanel = new StudentPanel();
+        this.subjectPanel = new SubjectPanel();
         studentPanel.initPanel();
+        subjectPanel.initSubjectPanel();
         frame.setLayout(new BorderLayout());
         init();
     }
@@ -23,6 +25,7 @@ public class MainWindows {
         frame.setSize(720, 480);
         frame.setLocationRelativeTo(null);
         frame.add(studentPanel.getStudentPanel());
+        frame.add(subjectPanel.getSubjectPanel());
         frame.setVisible(true);
     }
 
