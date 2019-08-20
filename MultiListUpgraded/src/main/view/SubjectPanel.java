@@ -43,7 +43,7 @@ public class SubjectPanel {
 
     public void initSubjectPanel(){
         this.subjectPanel.setLayout(null);
-        this.subjectPanel.setBounds(50, 130, 160, 100);
+        //this.subjectPanel.setBounds(50, 130, 160, 100);
         subjectPanel.setBackground(Color.gray);
 
         this.subjectLabel.setBounds(40,80,200,200);

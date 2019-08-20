@@ -10,7 +10,7 @@ public class ManagerStudent {
         this.students = new MultiList<>();
     }
 
-    public void addStudent(String name, String lastName, long RFID){
+    public void addStudent(String name, String lastName, int RFID){
         Student student = new Student(name, lastName, RFID);
         this.students.addBack(student);
     }
@@ -36,7 +36,7 @@ public class ManagerStudent {
         this.students.previousCurrentChild();
     }
 
-    public Student searchStudent(String name, String lastName, long RFID){
+    public Student searchStudent(String name, String lastName, int RFID){
         Student student = new Student(name, lastName, RFID);
         return this.students.getCurrentValue();
     }

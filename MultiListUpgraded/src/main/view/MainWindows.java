@@ -20,9 +20,9 @@ public class MainWindows {
     }
 
     public void init(){
-        frame.getContentPane().setLayout(new BorderLayout());
+        frame.getContentPane().setLayout(new GridLayout(2,0,0,0));
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.setSize(720, 480);
+        frame.setSize(720, 960);
         frame.setLocationRelativeTo(null);
         frame.add(studentPanel.getStudentPanel());
         frame.add(subjectPanel.getSubjectPanel());

@@ -3,9 +3,9 @@ package model;
 public class Student implements Comparable<Student> {
     private String name;
     private String lastName;
-    private long RFID;
+    private int RFID;
 
-    public Student(String name, String lastName, long RFID) {
+    public Student(String name, String lastName, int RFID) {
         this.name = name;
         this.lastName = lastName;
         this.RFID = RFID;
@@ -27,11 +27,11 @@ public class Student implements Comparable<Student> {
         this.lastName = lastName;
     }
 
-    public long getRFID() {
+    public int getRFID() {
         return RFID;
     }
 
-    public void setRFID(long RFID) {
+    public void setRFID(int RFID) {
         this.RFID = RFID;
     }
 

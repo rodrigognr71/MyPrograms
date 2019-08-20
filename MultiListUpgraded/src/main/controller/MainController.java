@@ -5,6 +5,8 @@ import model.Student;
 import view.MainWindows;
 import view.StudentPanel;
 
+import javax.swing.*;
+
 public class MainController {
     private ManagerStudent managerStudent;
     private MainWindows mainWindows;
@@ -19,21 +21,30 @@ public class MainController {
 
     public void initController() {
         this.mainWindows.init();
-        //
-        // mainWindows.getStudentPanel().getSaveStudentButton().addActionListener(e -> saveStudent());
+        mainWindows.getStudentPanel().getSaveStudentButton().addActionListener(e -> saveStudent());
        // mainWindows.getStudentPanel().getSearchStudentButton().addActionListener(e -> searchByUser());
        // mainWindows.getStudentPanel().getPreviousStudentButton().addActionListener(e -> previous());
        // mainWindows.getStudentPanel().getNextStudentButton().addActionListener(e -> next());
     }
 
-  /*  private void saveStudent(){
+    private void saveStudent(){
         Student student = new Student(mainWindows.getStudentPanel().getFirstnameTextField().getText(),
                 mainWindows.getStudentPanel().getLastnameTextField().getText(),
                 Integer.parseInt(mainWindows.getStudentPanel().getRFIDField().getText()));
         showStudent(student);
         managerStudent.addStudent(student);
-    }*/
 
+        managerStudent.addStudent(student);
+        JOptionPane.showMessageDialog(null, "User saved : " + student.getFullName()
+                , "Info", JOptionPane.INFORMATION_MESSAGE);
+    }
+
+    private void showStudent(Student student) {
+
+        mainWindows.getStudentPanel().getFirstnameTextField().setText(student.getName());
+        mainWindows.getStudentPanel().getLastnameTextField().setText(student.getLastName());
+        mainWindows.getStudentPanel().getRFIDField().setText("" + student.getRFID());
+    }
     /*public void initView() {
         mainWindows.getFirstnameTextField().setText("");
         mainWindows.getLastnameTextField().setText("");
@@ -41,12 +52,7 @@ public class MainController {
 
 
 
-    private void showStudent(Student student) {
 
-       mainWindows.getFirstnameTextField().setText(student.getName());
-       mainWindows.getLastnameTextField().setText(student.getLastName());
-       mainWindows.getRFIDField().setText("" + student.getRFID());
-    }
 
 
 
