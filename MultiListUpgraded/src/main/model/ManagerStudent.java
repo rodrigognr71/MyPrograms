@@ -38,7 +38,7 @@ public class ManagerStudent {
 
     public Student searchStudent(String name, String lastName, int RFID){
         Student student = new Student(name, lastName, RFID);
-        return this.students.getCurrentValue();
+        return this.students.search(student);
     }
 
     public MultiList<Student, Subject> getStudents() {
