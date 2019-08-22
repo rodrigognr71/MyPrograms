@@ -36,7 +36,7 @@ public class StudentPanel {
     public void initPanel(){
         studentPanel.setLayout(null);
         //this.studentPanel.setBounds(0, 0, 160, 100);
-        studentPanel.setBackground(Color.green);
+//        studentPanel.setBackground(Color.green);
 
         this.firstnameLabel.setBounds(10, 10, 80, 25);
         this.studentPanel.add(firstnameLabel);

@@ -10,5 +10,6 @@ public class App {
         MainWindows mainWindows = new MainWindows("MVC aplication");
         MainController controller = new MainController(managerStudent, mainWindows);
         controller.initController();
+        System.out.println("starting");
     }
 }
